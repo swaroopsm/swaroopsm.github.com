@@ -45,6 +45,24 @@ a small {
   display:block;
 }
 
+a:hover{
+	color: #04c;
+	outline:none;
+  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+	text-decoration: underline;
+}
+
+a small:hover{
+	color: #04c;
+	outline:none;
+  transition: all 0.8s ease-in-out;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+	text-decoration: underline;
+}
+
 .wrapper {
   width:860px;
   margin:0 auto;
