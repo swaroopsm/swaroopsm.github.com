@@ -3,4 +3,6 @@ layout: default
 ---
 <h2>Blog Roll <a href="about.html" style="float: right;">About me &raquo;</a> </h2>
 <hr>
-Coming Soon ;)
+{% for post in site.posts %}
+<a href="{{ post.url }}">{{ post.title }}</a>
+{% endfor %}
