@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Swaroop SM {% if page.title %} | {{ page.title }} {% endif %}</title>
+    {% include headerlinks.ext %}
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+				{% include about.ext %}
+      </header>
+      <section>
+      	{{ page.title }}
+        {{ content }}
+      </section>
+      <footer>
+        <p></p>
+        {% include footer.ext %}
+      </footer>
+    </div>
+  </body>
+</html>
