@@ -5,8 +5,8 @@
 
 
         <ul>
-          <li><a href="https://github.com/swaroopsm/Console-Bitly/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/swaroopsm/Console-Bitly/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/swaroopsm/Console-Bitly">View On <strong>GitHub</strong></a></li>
+          <li><a style="background: url('/img/facebook_icon.jpg') no-repeat; background-color: #3B5998;background-size: 90px 35px; max-height: 35px;" href="http://facebook.com/swaroop.striker" target="_BLANK"></a></li>
+          <li><center><a style="background: url('/img/twitter_icon.png') no-repeat;margin-left: 10px;" href="http://twitter.com/smswaroop" target="_BLANK"></a></center></li>
+          <li><a style="background: url('/img/github_logo.png') no-repeat; margin-left: 12px;margin-top: 7px;" href="http://github.com/swaroopsm" target="_BLANK"></a></li>
         </ul>
 </header>
