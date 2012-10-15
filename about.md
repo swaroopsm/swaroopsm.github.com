@@ -4,7 +4,7 @@ layout: default
 
 
 ### About Me
-
+***
 Howdy! I am Swaroop. I love meeting new people and get to know their culture and traditions. One of my dream travelling countries include Switzerland. I work on open source technologies and a [FOSS](http://en.wikipedia.org/wiki/Free_and_open-source_software) fan! I use Ubuntu and the xfce4 desktop environment on my machine. xfce's sleek and elegant design and is simply amazing and I feel very comfortable working on it!  I am current pursuing my Masters in Computer Applications in Bangalore, IN. I am also a music lover and a guitarist!
 
 I run a blog at [wordpress](http://zwaroop.wordpress.com), but I was unhappy because it was inflexible to my customization needs. So a friend of mine [Vipin Nair](http://swvist.github.com) suggested me to use [jekyll](http://jekyllrb.com) for blogging but was unsure. 
