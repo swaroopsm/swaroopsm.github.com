@@ -4,5 +4,5 @@ layout: default
 <h2>Blog Roll <a href="about.html" style="float: right;">About me &raquo;</a> </h2>
 <hr>
 {% for post in site.posts %}
-<a href="{{ post.url }}" title="{{ post.posted }}">{{ post.title }}</a><br/>
+<h3><a href="{{ post.url }}" title="{{ post.posted }}">{{ post.title }}</a></h3>
 {% endfor %}
