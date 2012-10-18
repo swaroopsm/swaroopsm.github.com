@@ -1,9 +1,8 @@
 ---
 layout: post
 title: Fun with JSON
-posted: 19 October, 2012
+posted: Friday, 19 October 2012
 ---
-<hr>
 JSON(Javascript Object Notation) is fun! It's really easy to parse JSON particularly using jQuery.
 
 A simple JSON Example. Assume you have a file name [person.json](#) that renders the following JSON object: 
