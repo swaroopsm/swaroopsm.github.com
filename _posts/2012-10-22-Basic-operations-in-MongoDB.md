@@ -31,7 +31,7 @@ To insert data into mongo, we need to pass data as JSON and then use the 'save' 
   				"website": "swaroopsm.github.com"
 			     })
 </code></pre>
-In the above example, we are inserting data into the persons collection of the database swaroop. Remember, a collection can be considered as a table in RDBMS, although since there MongoDB is a schema-free database, there is no concept of tables.
+In the above example, we are inserting data into the persons [collection](http://www.mongodb.org/display/DOCS/Collections) of the database swaroop. Remember, a [collection](http://www.mongodb.org/display/DOCS/Collections) can be considered as a table in RDBMS, although since MongoDB is a schema-free database, there is no concept of tables.
 
 #####Insert an array of values:
 		name       : "Swaroop SM",
@@ -47,7 +47,7 @@ In the above example, we are inserting data into the persons collection of the d
 </code></pre>
 
 
-#####Complex data insertion
+#####Complex data insertion:
 		name       : "Swaroop SM",
 		gender	: "Male",
 		website    : "swaroopsm.github.com",
@@ -56,9 +56,9 @@ In the above example, we are inserting data into the persons collection of the d
 		Now we also need to store the friend's details of Swaroop SM.
 		For e.g.: Joe's website, gender etc.
 		
-<pre class="highlight"><code class="vi">> db.persons.save({"name": "Swaroop SM",
+<pre class="highlight"><code class="vi">> db.persons.save({"name": "Carl James",
 				"gender": "Male",
-  				"website": "swaroopsm.github.com",
+  				"website": "carljames.in",
   				"friends": {
   					"name": "Joe",
   					"gender": "Male",
@@ -81,3 +81,53 @@ In the above example, we are inserting data into the persons collection of the d
   					}
 			     })
 </code></pre>
+
+**Select Data from MongoDB**
+
+MongoDB uses the *find* method to retreive data.
+
+#####Retrieve all documents of a particular collection:
+<pre class="highlight"><code class="vi">> db.persons.find()
+</code></pre>
+
+#####Result:
+<pre class="highlight"><code class="vi">{ "_id" : ObjectId("5084dbc63a54d35a3ce18ae0"), "name" : "Swaroop SM", "gender" : "Male", "website" : "swaroopsm.github.com", "friends" : [ "Joe", "Chris", "Kathy", "Thomas" ] }
+{ "_id" : ObjectId("5084e17f3a54d35a3ce18ae1"), "name" : "Johnson", "gender" : "Male", "website" : "johnson.czx.in", "friends" : [ "Swaroop SM", "Kristy" ] }
+</code></pre>
+
+#####Retrieve a specific document:
+<pre class="highlight"><code class="vi">> db.persons.find({"name": "Swaroop SM"})
+</code></pre>
+This retreives all documents with the name field having the value Swaroop SM.
+
+#####Result:
+<pre class="highlight"><code class="vi">{ "_id" : ObjectId("5084dbc63a54d35a3ce18ae0"), "name" : "Swaroop SM", "gender" : "Male", "website" : "swaroopsm.github.com", "friends" : [ "Joe", "Chris", "Kathy", "Thomas" ] }
+</code></pre>
+
+#####Retrieve a specific field in a document
+<pre class="highlight"><code class="vi">> db.persons.find({"name":"Swaroop SM"},{"friends":1})
+</code></pre>
+This retreives all the friends of Swaroop SM.
+
+#####Result
+<pre class="highlight"><code class="vi">{ "_id" : ObjectId("5084dbc63a54d35a3ce18ae0"), "friends" : [ "Joe", "Chris", "Kathy", "Thomas" ] }
+</code></pre>
+
+#####Retrieve a specific field of a nested document
+<pre class="highlight"><code class="vi">> db.persons.find({"name": "Carl James"},{"friends.website":1})
+</code></pre>
+This retreives a all the websites of Carl James' friends.
+
+#####Result
+<pre class="highlight"><code class="vi">{ "_id" : ObjectId("5084e49d3a54d35a3ce18ae2"), "friends" : [ { "website" : "joe.abc.com" }, 	{ "website" : "chris.xyz.com" }, { "website" : "kathy.pqr.org" }, { "website": "thomas.ttt.in" } ] }
+</code></pre>
+
+#####Retrieve documents using operators
+<pre class="highlight"><code class="vi">> db.persons.save({"name": "Smith","salary": 40000})
+> db.persons.save({"name": "Chad","salary": 45000})
+
+> db.persons.find({"salary": {$gt: 40000}})
+</code></pre>
+This retieves all the documents whose salary field value is greater that 40000.
+
+There are various operators like $lt, $ne etc. Check out the complete list here: [MongoDB Conditional Operators](http://www.mongodb.org/display/DOCS/Advanced+Queries#AdvancedQueries-ConditionalOperators)
