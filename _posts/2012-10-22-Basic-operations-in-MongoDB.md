@@ -131,3 +131,18 @@ This retreives a all the websites of Carl James' friends.
 This retieves all the documents whose salary field value is greater that 40000.
 
 There are various operators like $lt, $ne etc. Check out the complete list here: [MongoDB Conditional Operators](http://www.mongodb.org/display/DOCS/Advanced+Queries#AdvancedQueries-ConditionalOperators)
+
+**Update Documents**
+
+Mongodb uses the *update* method to update documents.
+
+#####Update value of a field:
+<pre class="highlight"><code class="vi">> db.persons.update({ "name": "Chad" }, { $set: { "name": "Anthony" } })
+</code></pre>
+This updates the value of name field  of the document from Chad to Anthony
+
+#####Result:
+<pre class="highlight"><code class="vi">> db.persons.find({ "name": "Anthony" })
+
+{ "_id" : ObjectId("5084eaec3a54d35a3ce18ae6"), "name" : "Anthony", "salary" : 45000 }
+</code></pre>
