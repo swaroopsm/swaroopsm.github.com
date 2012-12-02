@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deploying Python Flask on Apache using mod_wsgi
-posted: Friday, 19 October 2012
+posted: Sunday, 02 December 2012
 description: Configuring Python Flask to work with Apache
 keywords: Python, Flask, Apache, wsgi
 ---
