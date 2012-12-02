@@ -2,6 +2,8 @@
 layout: post
 title: Deploying Python Flask on Apache using mod_wsgi
 posted: Friday, 19 October 2012
+description: Configuring Python Flask to work with Apache
+keywords: Python, Flask, Apache, wsgi
 ---
 
 [Flask](http://flask.pocoo.org) is an amazing framework for developing web applications. It is so simple that you could develop web apps on the fly. I've been working on [Crackpot](http://github.com/swaroopsm/Crackpot) that is built using [Flask](http://flask.pocoo.org) and under constant development. The sole purpose of this web app was to learn and use [Flask](http://flask.pocoo.org). I built a couple of cool stuff in this app, ran on the local development server and was pretty happy. But then, I wondered how do I deploy this to the Apache web server. So, I began googling about posts and all my trials were unsuccessful at the beginning and after a week long I finally got it working on my Apache web server. :)
