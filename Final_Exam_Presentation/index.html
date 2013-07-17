@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>WhiteEngine - Data Extraction, Processing & Report Generation</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1 style="text-transform: none;">WhiteEngine</h1>
+					<h3>Data Extraction</h3>
+					<p>
+						<small>Company: <a href="http://ribhunifo.com">Ribhu Info Solutions</a> </small>
+					</p>
+					<p>
+						<small>Swaroop SM / 1CR10MCA50</small>
+					</p>
+				</section>
+				<section>
+					<section>
+						<h2>Ribhu Info Solutions</h2>
+						<p>
+							Knowledge Process Outsourcing (KPO) & publishing
+	company in the area of company intelligence and Business Continuity. Our
+	outsourcing solutions include company profiling for research organizations and
+	business information companies
+						</p>
+
+						<aside class="notes">
+							Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						</aside>
+					</section>
+					<section>
+					<h2>Company Profiling</h2>
+					<p>
+						<ul>
+							<li>Basic Data </li>
+							<li>Company Summary</li>
+							<li>Executive Data</li>
+							<li>Products and Services Offered</li>
+							<li> Related companies </li>
+						</ul>
+
+					</p>
+
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+				<section>
+					<h2>Services</h2>
+					<p>
+					<ul>
+						<li>
+							Whitepapers
+							<p>Provides information about companies with customers, competitors, suppliers & products.</p>
+						</li>
+						<li>
+							Publications
+							<p>
+								Books and Papers published by Ribhu Info Solutions.
+							</p>
+						</li>
+						<li>
+							Turn-Key Projects
+							<p>
+								Provide need based information solution and suport to its customers in various business areas.
+							</p>
+						</li>
+					</ul>
+					</p>
+				</section>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Project Overview</h2>
+						<br>
+						<p>
+							The application mines and extracts the most relevant data so as to reduce the
+manual work involved in the data collection and sorting. Also generation of the
+WhitePapers that is in a PDF format is also taken care by the application and thus
+reducing manual labor.
+						</p>
+
+					</section>
+					<section>
+						<h2>Existing System</h2>
+						<br>
+						<p>
+							<ul>
+								<li>Collection of data of an individual company and searching them manually
+from various resources from the web.</li>
+								<li>Excel sheet as a means of storage.</li>
+							<li>Manual Review and Cleaning of data.</li>
+							<li>Use of Excel Macros for report generation.</li>
+							<li>Convert the report into PDF</li>
+							<li>PDF uploads to website.</li>
+
+							</ul>
+
+						</p>
+					</section>
+					<section>
+						<h2>Proposed System</h2>
+						<p>
+							<ul>
+								<li>One System, All Activities</li>
+								<li>Use of Web Browser as the central system, to operate from anywhere.</li>
+								<li>Quick Navigation of different Companies' information.</li>
+								<li>High Quality PDF generation.</li>
+							</ul>
+
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Software & Hardware Requirements</h2>
+						<p>
+
+						</p>
+					</section>
+					<section>
+						<h2>Hardware Requirements</h2>
+						<br>
+						<p>
+							<ul>
+								<li>Pentium 4 or equivalent processors</li>
+								<li>512 MB RAM</li>
+								<li>30 GB HDD</li>
+								<li>EVG/VGA Colour Monitor. 1024 * 768</li>
+								<li>Keyboard & Mouse</li>
+							</ul>
+
+						</p>
+					</section>
+					<section>
+						<h2>Software Requirements</h2>
+						<br>
+						<p>
+							<ul>
+								<li>Unix like OS(preferably debian or its derivatives)</li>
+								<li>Python, Javascript</li>
+								<li>Apache</li>
+								<li>Flask</li>
+								<li>MongoDB</li>
+								<li>LaTeX</li>
+							</ul>
+
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Functionality of the Proposed System</h2>
+					</section>
+
+					<section>
+						<h2>Data Extraction & Parsing</h2>
+						<br>
+						<ul>
+							<li>
+							 <a href="#">Urllib2:</a> Provides an updated API for using internet resources identified by URLs <br>
+							</li>
+							<li>
+							 <a href="#">BeautifulSoup4:</a> Provides a few simple methods and Pythonic idioms for navigating, searching, and modifying a parse tree: a toolkit for dissecting a document and extracting what you need. <br>
+							</li>
+						</ul>
+
+					</section>
+
+					<section>
+						<h2>User Creation</h2>
+						<br>
+						<p>
+							The users or the reviewers of the system are created here. It consists of a username and password for a specific user. The password is encrypted using the SHA-1 digest algorithm.
+						</p>
+					</section>
+
+					<section>
+						<h2>Company Assignments</h2>
+						<p>
+							Here a specific company is assigned to a user. A user gets an equal proportion of
+the companies available in the system. Since the stock ticker symbol of each company is unique, the companies assigned for a specific user is stored as an array for each user.
+						</p>
+					</section>
+
+					<section>
+						<h2>PDF Report Generation</h2>
+						<p>
+							The fields that were mentioned for each company are finally compiled together into neat report. This is done by using LaTeX.
+						</p>
+					</section>
+
+					<section>
+						<h2>LaTex & Jinja Communication</h2>
+						<p>
+							<img src="jinja_templating_engine.png" />
+						</p>
+					</section>
+
+				</section>
+
+				<section>
+
+					<section>
+						<h2>System DataFlow</h2>
+					</section>
+
+					<section>
+						<h2>Overall System Flow</h2> <br>
+						<img src="dfd1.svg" style="height: 500px;">
+					</section>
+
+					<section>
+						<h2>Report Generation Flow</h2> <br>
+						<img src="dfd4.svg" style="height: 500px;">
+					</section>
+
+				</section>
+
+				<section>
+
+					<section>
+						<h2>Screenshots</h2>
+					</section>
+
+					<section>
+						<h2>Login</h2>
+						<img src="img/s1.png">
+					</section>
+
+					<section>
+						<h2>Dashboard</h2>
+						<img src="img/s3.png">
+					</section>
+
+					<section>
+						<h2>S & P 500 Companies Assignment</h2>
+						<img src="img/s4.png">
+					</section>
+
+					<section>
+						<h2>Company Review</h2>
+						<img src="img/s6.png">
+					</section>
+
+					<section>
+						<h2>PDF Generation</h2>
+						<img src="img/s7.png">
+					</section>
+
+					<section>
+						<h2>Sample Whitepaper</h2>
+						<img src="img/s11.png">
+					</section>
+
+				</section>
+					<section>
+						<h2>Conclusion</h2> <br>
+						<p>
+							The project has been of great help to me in gaining valuable information. It has given me a great satisfaction in having designed an application that has importance in real world.
+						</p>
+					</section>
+
+
+				<section>
+					<h2>Future Enhancements</h2>
+					<p>
+						<ul>
+							<li>Bulk Whitepaper Generation</li>
+							<li>Deploying onto the cloud with AWS or Heroku.</li>
+						</ul>
+
+					</p>
+					<p>
+					</p>
+				</section>
+
+				<section>
+					<h2>Thank You</h2>
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
